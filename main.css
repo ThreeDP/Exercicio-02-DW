@@ -47,8 +47,21 @@ body {
     
 }
 
+.tables {
+    width: 70%;
+    margin-bottom: 3rem;;
+    display: flex;
+    flex-direction: column;
+}
+
 .content-text {
     flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-table {
+    flex: 1 0 100%;
     display: flex;
     flex-direction: column;
 }
@@ -63,6 +76,7 @@ body {
     color: #E32536;
     margin-bottom: 5px;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .content-subtitle {
@@ -84,12 +98,82 @@ body {
     padding: 10px;
     border-radius: 25px;
     text-decoration: none;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;;
     max-width: 120px;
     text-align: center;
+    border: none;
 }
 
 .button:hover {
     background-color: #E32536;
+}
+
+.title-ol {
+    text-align: start;
+    color: #E32536;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.ol-li-list {
+    color: #404040;
+    font-weight: 200;
+
+}
+
+.table-style {
+    max-width: 90%;
+    border: 3px solid #0D0D0D;
+}
+.table-style td {
+    border: 2px solid #404040;
+
+}
+
+.table-style td:first-child {
+    min-width: 25%;
+    background:#404040;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.table-style tr:first-child {
+    background:#8C8C8C;
+    text-align: center;
+}
+
+.ol-list-table {
+    margin: 0px;
+}
+
+.control-input {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.button-control {
+    text-align: center;
+}
+
+.forms {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-t1 {
+    flex: 1 0 25%;
+}
+
+.input-t2 {
+    flex: 1 0 50%;
+}
+
+.input-t3 {
+    flex: 1 0 75%;
+}
+
+.input-t4 {
+    flex: 1 0 100%;
 }
