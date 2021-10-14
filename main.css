@@ -74,7 +74,7 @@ body {
 .content-supertitle {
     font-size: xx-large;
     color: #E32536;
-    margin-bottom: 5px;
+    margin-bottom: 1.5rem;
     text-align: center;
     text-transform: capitalize;
 }
@@ -93,14 +93,15 @@ body {
 }
 
 .button {
+    font-size: 1rem;
     background-color: #0D0D0D;
     color: #f2f2f2;
-    padding: 10px;
+    padding: 1rem;
     border-radius: 25px;
     text-decoration: none;
     margin-top: 1rem;
     margin-bottom: 1rem;;
-    max-width: 120px;
+    width: 180px;
     text-align: center;
     border: none;
 }
@@ -151,6 +152,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 5px;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
 }
 
 .button-control {
@@ -160,6 +163,9 @@ body {
 .forms {
     display: flex;
     flex-wrap: wrap;
+    background: #f2f2f2;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 .input-t1 {
@@ -176,4 +182,36 @@ body {
 
 .input-t4 {
     flex: 1 0 100%;
+}
+
+.form-label {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: 2px;
+    color: #0D0D0D;
+    font-weight: normal;
+}
+
+.form-input {
+    padding: 0.5rem;
+    border: 1px solid #b8b8b8;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: #dfdfdf;
+    letter-spacing: 2px;
+}
+
+.form-select {
+    padding: 0.5rem;
+    border: 1px solid #b8b8b8;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: #0D0D0D;
+    letter-spacing: 2px;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 0.5rem;
 }

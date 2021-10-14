@@ -20,34 +20,39 @@
     <section class="articles">
         <article class="content-text">
             <h1 class="content-supertitle">Faça sua Inscrição</h1>
-            <form action="" class="forms">
+            <form action="#" class="forms">
                 <div class="control-input input-t4">
                     <label for="name" class="form-label">Nome</label>
-                    <input type="text" class="form-input" id="name" placeholder="Nome Completo">
+                    <input type="text" class="form-input" id="name" name="name" placeholder="Nome Completo" required>
                 </div>
                 <div class="control-input input-t2">
                     <label for="data-nascimento" class="form-label">Data de Nascimento</label>
-                    <input type="date" class="form-input" id="data-nascimento">
+                    <input name="birth_date" type="date" class="form-input" id="data-nascimento" required>
                 </div>
                 <div class="control-input input-t2">
                     <label for="sexo" class="form-label">Sexo</label>
-                    <select name="sexo" id="sexo">
-                        <option selected>Selecione um sexo</option>
-                        <option value="M">Masculino</option>
-                        <option value="F">Feminino</option>
-                    </select>
+                    <div id="sexo" class="radio-group">
+                        <div>
+                            <input type="radio" id="masculino" name="Sexo" value="M">
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="feminino" name="Sexo" value="F">
+                            <label for="feminino">Feminino</label><br>
+                        </div>
+                    </div>
                 </div>
                 <div class="control-input input-t4">
                     <label for="endereco" class="form-label">Endereço</label>
-                    <input type="text" class="form-input" id="endereco">
+                    <input name="address" type="text" class="form-input" id="endereco" required>
                 </div>
                 <div class="control-input input-t2">
                     <label for="cidade" class="form-label">Cidade</label>
-                    <input type="text" class="form-input" id="cidade">
+                    <input name="city" type="text" class="form-input" id="cidade" required>
                 </div>
                 <div class="control-input input-t2">
                     <label for="estado" class="form-label">Estado</label>
-                    <select name="estado" id="estado">
+                    <select name="state" id="estado" class="form-select" required>
                         <option selected>Selecione um estado</option>
                         <option value="AC">AC</option>
                         <option value="AL">AL</option>
@@ -80,15 +85,15 @@
                 </div>
                 <div class="control-input input-t3">
                     <label for="e-mail" class="form-label">E-mail</label>
-                    <input type="email" class="form-input" id="email">
+                    <input name="email" type="email" class="form-input" id="email" required>
                 </div>
                 <div class="control-input input-t1">
                     <label for="telefone" class="form-label">Telefone</label>
-                    <input type="tel" class="form-input" id="telefone" placeholder="(00) 0000-0000">
+                    <input name="cellphone" type="tel" class="form-input" id="telefone" placeholder="(00) 0000-0000" required>
                 </div>
                 <div class="control-input input-t2">
                     <label for="interesse" class="form-label">Área de interesse</label>
-                    <select name="interesse" id="interesse" class="form-input">
+                    <select name="interest" id="interesse" class="form-select" required>
                         <option selected>Selecione uma área de interesse</option>
                         <option value="Computação">Computação</option>
                         <option value="Engenharia">Engenharia</option>
@@ -97,18 +102,18 @@
                 </div>
                 <div class="control-input input-t2">
                     <label for="user" class="form-label">Usuário</label>
-                    <input type="text" class="form-input" id="user">
+                    <input name="user" type="text" class="form-input" id="user" required>
                 </div>
                 <div class="control-input input-t2">
                     <label for="pass" class="form-label">Senha</label>
-                    <input type="password" class="form-input" id="pass">
+                    <input name="password" type="password" class="form-input" id="pass" required>
                 </div>
                 <div class="control-input input-t2">
                     <label for="pass-confirm" class="form-label">Confirmar Senha</label>
-                    <input type="password" class="form-input" id="pass-confirm">
+                    <input name="pass-confirmation" type="password" class="form-input" id="pass-confirm" required>
                 </div>
                 <div class="button-control input-t4">
-                    <button type="submit" class="button">Ver Curso</button>
+                    <button name="button-sub" type="submit" class="button">Ver Curso</button>
                 </div>
             </form>
         </article>
